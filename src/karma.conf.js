@@ -27,6 +27,13 @@ module.exports = function(config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
-    restartOnFileChange: true
+    restartOnFileChange: true,
+    proxies: {
+      '/api': {
+        target: 'http://anapioficeandfire.com/api',
+        secure: false,
+        changeOrigin: true
+      }
+    }
   });
 };
