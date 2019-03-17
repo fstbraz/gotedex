@@ -95,7 +95,7 @@ describe('CharactersService', () => {
 
     charactersService
       .fetchCharacters(1, 'Jon Snow')
-      .subscribe(heroe => expect(heroe).toEqual(expectedResponse, 'expected character'), fail);
+      .subscribe(hero => expect(hero).toEqual(expectedResponse, 'expected character'), fail);
     expect(httpClientSpy.get.calls.count()).toBe(1);
   });
 });
