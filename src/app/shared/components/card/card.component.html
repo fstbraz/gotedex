@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-header">
+    {{ name }}
+  </div>
+
+  <div class="card-block" *ngIf="gender || culture || born || died">
+    <p *ngIf="gender">Gender : {{ gender }}</p>
+    <p *ngIf="culture">Culture : {{ culture }}</p>
+    <p *ngIf="born">Born : {{ born }}</p>
+    <p *ngIf="died">Died : {{ died }}</p>
+  </div>
+
+  <div class="card-block" *ngIf="aliases && aliases[0].length >= 1">
+    <ul class="list">
+      <li *ngFor="let aliase of aliases">{{ aliase }}</li>
+    </ul>
+  </div>
+</div>
