@@ -54,7 +54,7 @@ describe('AppComponent', () => {
     fixture.whenStable().then(() => {
       const nativeElement = fixture.nativeElement;
       const cardColumns = nativeElement.querySelector('div.card-columns');
-      expect(cardColumns.toBeTruthy());
+      expect(cardColumns).toBeTruthy();
     });
   });
 
@@ -65,7 +65,7 @@ describe('AppComponent', () => {
     fixture.whenStable().then(() => {
       const nativeElement = fixture.nativeElement;
       const spinner = nativeElement.querySelector('span.spinner');
-      expect(spinner.toBe(true));
+      expect(spinner).toBeTruthy();
     });
   });
 });

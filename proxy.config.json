@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "https://anapioficeandfire.com/",
+    "target": "https://anapioficeandfire.com",
     "secure": false,
     "changeOrigin": true
   }
