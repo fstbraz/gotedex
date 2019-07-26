@@ -1,3 +1,7 @@
+# Context 
+
+Infinite scrolling app that lists all the characters from GOT. The characters are loaded progressively into the dom   
+
 # Gotedex (Fe repo)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
